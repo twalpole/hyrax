@@ -6,9 +6,7 @@ module Hyrax
     before_action :build_breadcrumbs, only: [:work, :file]
 
     # TODO: New reporting features FlipFlop pattern:
-    # FlipFlop.analytics_redesign?
-    # or
-    # FlipFlop.enabled?(:analytics_redesign)
+    # Flipflop.enabled?(:analytics_redesign)
 
     def work
       @stats = Hyrax::WorkUsage.new(params[:id])
