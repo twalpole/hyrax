@@ -3,7 +3,9 @@ source 'https://rubygems.org'
 # Please see hyrax.gemspec for dependency information.
 gemspec
 
+
 group :development, :test do
+  gem 'capybara', '~> 2.4', '< 2.18.0' # This should be defined in gemspec file, but bundler fails to honor the pin to < 2.18.0
   gem 'coveralls', require: false
   gem 'pry' unless ENV['CI']
   gem 'pry-byebug' unless ENV['CI']

@@ -76,7 +76,7 @@ SUMMARY
   spec.add_dependency 'signet'
   spec.add_dependency 'tinymce-rails', '~> 4.1'
 
-  spec.add_development_dependency "capybara", '~> 2.4'
+  # spec.add_development_dependency "capybara", '~> 2.4' # temporary pin to 2.17.0 added to Gemfile
   spec.add_development_dependency 'capybara-maleficent', '~> 0.2'
   spec.add_development_dependency "chromedriver-helper"
   spec.add_development_dependency 'database_cleaner', '~> 1.3'
