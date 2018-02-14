@@ -31,3 +31,6 @@ services:
   - redis-server
 before_script:
   - jdk_switcher use oraclejdk8
+cache:
+  directories:
+    - .internal_test_app/
