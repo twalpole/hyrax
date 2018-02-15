@@ -30,3 +30,10 @@ signed in %>
 
 <!-- for extras, e.g., a favicon -->
 <%= render partial: '/head_tag_extras', formats: [:html] %>
+
+<% if Rails.env.test? %>
+  <%= stylesheet_link_tag('disable_animations') %>
+
+  <!-- Turn off animations in jQuery -->
+  <script>$.fx.off = true;</script>
+<% end %>
